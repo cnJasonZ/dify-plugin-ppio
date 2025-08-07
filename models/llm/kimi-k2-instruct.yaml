@@ -4,11 +4,12 @@ label:
   en_US: Kimi K2 Instruct
 model_type: llm
 features:
-  - agent-thought
-  - multi-tool-call
   - structured-output
+  - multi-tool-call
+  - agent-thought
   - tool-call
   - stream-tool-call
+  - vision
 model_properties:
   mode: chat
   context_size: 131072
