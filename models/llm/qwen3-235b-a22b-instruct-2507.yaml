@@ -1,13 +1,17 @@
-model: google/gemma-3-27b-it
+model: qwen/qwen3-235b-a22b-instruct-2507
 label:
-  zh_Hans: Gemma 3 27B
-  en_US: Gemma 3 27B
+  zh_Hans: Qwen3 235B A22B Instruct 2507
+  en_US: Qwen3 235B A22B Instruct 2507
 model_type: llm
 features:
   - agent-thought
+  - multi-tool-call
+  - structured-output
+  - tool-call
+  - stream-tool-call
 model_properties:
   mode: chat
-  context_size: 32000
+  context_size: 262144
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -35,7 +39,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.0146'
-  output: '0.0146'
+  input: '0.0145'
+  output: '0.058'
   unit: '0.0001'
   currency: CNY

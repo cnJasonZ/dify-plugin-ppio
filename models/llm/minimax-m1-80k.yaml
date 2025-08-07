@@ -1,13 +1,16 @@
-model: thudm/glm-z1-9b-0414
+model: minimaxai/minimax-m1-80k
 label:
-  zh_Hans: THUDM/GLM-Z1-9B-0414
-  en_US: THUDM/GLM-Z1-9B-0414
+  zh_Hans: MiniMaxAI/MiniMax-M1-80k
+  en_US: MiniMaxAI/MiniMax-M1-80k
 model_type: llm
 features:
   - agent-thought
+  - multi-tool-call
+  - tool-call
+  - stream-tool-call
 model_properties:
   mode: chat
-  context_size: 32000
+  context_size: 128000
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -35,7 +38,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0'
-  output: '0'
+  input: '0.04'
+  output: '0.16'
   unit: '0.0001'
   currency: CNY

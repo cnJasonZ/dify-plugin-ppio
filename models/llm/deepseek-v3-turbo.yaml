@@ -5,6 +5,9 @@ label:
 model_type: llm
 features:
   - agent-thought
+  - multi-tool-call
+  - tool-call
+  - stream-tool-call
 model_properties:
   mode: chat
   context_size: 64000

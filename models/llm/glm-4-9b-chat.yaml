@@ -3,8 +3,7 @@ label:
   zh_Hans: GLM4 9B Chat
   en_US: GLM4 9B Chat
 model_type: llm
-features:
-  - agent-thought
+features: []
 model_properties:
   mode: chat
   context_size: 32000

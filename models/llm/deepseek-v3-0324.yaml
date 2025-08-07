@@ -4,10 +4,13 @@ label:
   en_US: DeepSeek V3 0324
 model_type: llm
 features:
-  - agent-thought
+  - multi-tool-call
+  - structured-output
+  - tool-call
+  - stream-tool-call
 model_properties:
   mode: chat
-  context_size: 128000
+  context_size: 163840
 parameter_rules:
   - name: temperature
     use_template: temperature

@@ -1,13 +1,17 @@
-model: meta-llama/llama-3.2-3b-instruct
+model: moonshotai/kimi-k2-instruct
 label:
-  zh_Hans: Llama3.2 3B Instruct
-  en_US: Llama3.2 3B Instruct
+  zh_Hans: Kimi K2 Instruct
+  en_US: Kimi K2 Instruct
 model_type: llm
 features:
   - agent-thought
+  - multi-tool-call
+  - structured-output
+  - tool-call
+  - stream-tool-call
 model_properties:
   mode: chat
-  context_size: 32000
+  context_size: 131072
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -35,7 +39,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0'
-  output: '0'
+  input: '0.04'
+  output: '0.16'
   unit: '0.0001'
   currency: CNY
