@@ -1,7 +1,7 @@
 model: deepseek/deepseek-r1-0528-qwen3-8b
 label:
-  zh_Hans: DeepSeek R1 0528 Qwen3 8B
-  en_US: DeepSeek R1 0528 Qwen3 8B
+  zh_Hans: DeepSeek-R1-0528-Qwen3-8B
+  en_US: DeepSeek-R1-0528-Qwen3-8B
 model_type: llm
 features:
   - agent-thought

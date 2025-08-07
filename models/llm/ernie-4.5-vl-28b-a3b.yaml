@@ -1,13 +1,18 @@
-model: thudm/glm-z1-rumination-32b-0414
+model: baidu/ernie-4.5-vl-28b-a3b
 label:
-  zh_Hans: THUDM/GLM-Z1-Rumination-32B-0414
-  en_US: THUDM/GLM-Z1-Rumination-32B-0414
+  zh_Hans: ERNIE-4.5-VL-28B-A3B
+  en_US: ERNIE-4.5-VL-28B-A3B
 model_type: llm
 features:
   - agent-thought
+  - multi-tool-call
+  - structured-output
+  - vision
+  - tool-call
+  - stream-tool-call
 model_properties:
   mode: chat
-  context_size: 32000
+  context_size: 30000
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -35,7 +40,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.0175'
-  output: '0.0175'
+  input: '0'
+  output: '0'
   unit: '0.0001'
   currency: CNY

@@ -4,7 +4,7 @@ label:
   en_US: 'DeepSeek: DeepSeek R1 Distill Llama 8B'
 model_type: llm
 features:
-  - agent-thought
+  - structured-output
 model_properties:
   mode: chat
   context_size: 32000

@@ -1,13 +1,17 @@
-model: meta-llama/llama-3.1-8b-instruct
+model: qwen/qwen3-235b-a22b-thinking-2507
 label:
-  zh_Hans: Llama3.1 8B Instruct
-  en_US: Llama3.1 8B Instruct
+  zh_Hans: Qwen3 235B A22b Thinking 2507
+  en_US: Qwen3 235B A22b Thinking 2507
 model_type: llm
 features:
   - agent-thought
+  - multi-tool-call
+  - structured-output
+  - tool-call
+  - stream-tool-call
 model_properties:
   mode: chat
-  context_size: 32000
+  context_size: 131072
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -35,7 +39,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.004'
-  output: '0.004'
+  input: '0.02'
+  output: '0.2'
   unit: '0.0001'
   currency: CNY

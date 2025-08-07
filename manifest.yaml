@@ -15,7 +15,7 @@ meta:
     entrypoint: main
     language: python
     version: '3.10'
-  version: 0.0.2
+  version: 0.0.3
 name: ppio
 plugins:
   models:
@@ -34,5 +34,5 @@ resource:
     tool:
       enabled: true
 type: plugin
-version: 0.0.2
+version: 0.0.3
 privacy: https://ppio.cn/legal/privacy-policy

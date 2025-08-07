@@ -1,13 +1,17 @@
-model: meta-llama/llama-4-scout-17b-16e-instruct
+model: qwen/qwen3-coder-480b-a35b-instruct
 label:
-  zh_Hans: Llama 4 Scout Instruct
-  en_US: Llama 4 Scout Instruct
+  zh_Hans: Qwen3 Coder 480B A35B Instruct
+  en_US: Qwen3 Coder 480B A35B Instruct
 model_type: llm
 features:
   - agent-thought
+  - multi-tool-call
+  - structured-output
+  - tool-call
+  - stream-tool-call
 model_properties:
   mode: chat
-  context_size: 131072
+  context_size: 262144
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -35,7 +39,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.00725'
-  output: '0.036'
+  input: '0.15'
+  output: '0.15'
   unit: '0.0001'
   currency: CNY
