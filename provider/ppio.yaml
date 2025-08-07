@@ -16,7 +16,7 @@ help:
     en_US: Get your API key from PPIO
     zh_Hans: 从 PPIO 获取 API Key
   url:
-    en_US: https://ppio.cn/settings/key-management?utm_source=github_dify&utm_medium=github_readme&utm_campaign=link
+    en_US: https://ppio.com/settings/key-management?utm_source=github_dify&utm_medium=github_readme&utm_campaign=link
 supported_model_types:
   - llm
 configurate_methods:
