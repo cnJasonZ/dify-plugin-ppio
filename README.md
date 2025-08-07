@@ -8,8 +8,8 @@ PPIO delivers cutting-edge AI large model inference services, empowering users t
 
 ![](_assets/ppio-01.png)
 
-2. [Create a PPIO account.](https://ppio.cn/user/register?invited_by=JXATT3&utm_source=github_dify)
-3. Create and save your API key [here](https://ppio.cn/settings/key-management).
+2. [Create a PPIO account.](https://ppio.com/user/register?invited_by=JXATT3&utm_source=github_dify)
+3. Create and save your API key [here](https://ppio.com/settings/key-management).
    - Click your [User Avatar] → [API Key Management] to access the console.
      ![](_assets/ppio-02.png)
    - Select **[+ Create]** to generate a new API Key. Customize a name, and note that the key **will only be displayed once upon generation** — ensure to copy and save it securely for uninterrupted future use.
@@ -24,4 +24,4 @@ PPIO delivers cutting-edge AI large model inference services, empowering users t
 ![](_assets/ppio-04.png)
 
 
-Source code of this plugin: [https://github.com/cnJasonZ/dify-official-plugins/tree/feat/ppio/models/ppio](https://github.com/cnJasonZ/dify-official-plugins/tree/feat/ppio/models/ppio)
+Source code of this plugin: [https://github.com/cnJasonZ/dify-plugin-ppio](https://github.com/cnJasonZ/dify-plugin-ppio)
