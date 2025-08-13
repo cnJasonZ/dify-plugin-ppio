@@ -1,16 +1,18 @@
-model: qwen/qwen2.5-7b-instruct
+model: zai-org/glm-4.5v
 label:
-  zh_Hans: Qwen 2.5 7B Instruct
-  en_US: Qwen 2.5 7B Instruct
+  zh_Hans: GLM 4.5V
+  en_US: GLM 4.5V
 model_type: llm
 features:
-  - multi-tool-call
   - structured-output
-  - tool-call
+  - agent-thought
   - stream-tool-call
+  - vision
+  - tool-call
+  - multi-tool-call
 model_properties:
   mode: chat
-  context_size: 32000
+  context_size: 65536
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -38,7 +40,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.0035'
-  output: '0.0035'
+  input: '0.045'
+  output: '0.13'
   unit: '0.0001'
   currency: CNY
