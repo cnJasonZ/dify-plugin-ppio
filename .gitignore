@@ -169,3 +169,5 @@ cython_debug/
 
 
 sync_models.py
+
+*.difypkg
