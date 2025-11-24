@@ -1,16 +1,17 @@
-model: qwen/qwen2.5-32b-instruct
+model: moonshotai/kimi-k2-0905
 label:
-  zh_Hans: Qwen2.5 32B Instruct
-  en_US: Qwen2.5 32B Instruct
+  zh_Hans: Kimi K2 0905
+  en_US: Kimi K2 0905
 model_type: llm
 features:
   - multi-tool-call
-  - structured-output
-  - tool-call
   - stream-tool-call
+  - structured-output
+  - agent-thought
+  - tool-call
 model_properties:
   mode: chat
-  context_size: 32000
+  context_size: 262144
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -38,7 +39,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.0126'
-  output: '0.0126'
+  input: '0.034'
+  output: '0.136'
   unit: '0.0001'
   currency: CNY

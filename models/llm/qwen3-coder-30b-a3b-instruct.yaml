@@ -1,14 +1,16 @@
-model: thudm/glm-4.1v-9b-thinking
+model: qwen/qwen3-coder-30b-a3b-instruct
 label:
-  zh_Hans: GLM 4.1V 9B Thinking
-  en_US: GLM 4.1V 9B Thinking
+  zh_Hans: Qwen3 Coder 30b A3B Instruct
+  en_US: Qwen3 Coder 30b A3B Instruct
 model_type: llm
 features:
-  - agent-thought
-  - vision
+  - structured-output
+  - tool-call
+  - stream-tool-call
+  - multi-tool-call
 model_properties:
   mode: chat
-  context_size: 65536
+  context_size: 262144
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -36,7 +38,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.0025'
-  output: '0.01'
+  input: '0.019125'
+  output: '0.0765'
   unit: '0.0001'
   currency: CNY

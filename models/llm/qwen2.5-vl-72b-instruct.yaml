@@ -8,7 +8,7 @@ features:
   - vision
 model_properties:
   mode: chat
-  context_size: 32768
+  context_size: 32000
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -36,7 +36,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.042'
-  output: '0.042'
+  input: '0.0357'
+  output: '0.0357'
   unit: '0.0001'
   currency: CNY

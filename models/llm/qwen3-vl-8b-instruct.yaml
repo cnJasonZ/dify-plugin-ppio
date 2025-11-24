@@ -1,16 +1,17 @@
-model: baidu/ernie-4.5-21B-a3b
+model: qwen/qwen3-vl-8b-instruct
 label:
-  zh_Hans: ERNIE-4.5-21B-A3B
-  en_US: ERNIE-4.5-21B-A3B
+  zh_Hans: qwen/qwen3-vl-8b-instruct
+  en_US: qwen/qwen3-vl-8b-instruct
 model_type: llm
 features:
-  - agent-thought
   - multi-tool-call
-  - tool-call
   - stream-tool-call
+  - structured-output
+  - agent-thought
+  - tool-call
 model_properties:
   mode: chat
-  context_size: 120000
+  context_size: 131072
 parameter_rules:
   - name: temperature
     use_template: temperature
