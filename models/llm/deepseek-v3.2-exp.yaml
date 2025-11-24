@@ -1,16 +1,17 @@
-model: baidu/ernie-4.5-21B-a3b
+model: deepseek/deepseek-v3.2-exp
 label:
-  zh_Hans: ERNIE-4.5-21B-A3B
-  en_US: ERNIE-4.5-21B-A3B
+  zh_Hans: Deepseek V3.2 Exp
+  en_US: Deepseek V3.2 Exp
 model_type: llm
 features:
-  - agent-thought
   - multi-tool-call
-  - tool-call
   - stream-tool-call
+  - structured-output
+  - agent-thought
+  - tool-call
 model_properties:
   mode: chat
-  context_size: 120000
+  context_size: 163840
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -38,7 +39,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.00425'
-  output: '0.017'
+  input: '0.01'
+  output: '0.015'
   unit: '0.0001'
   currency: CNY

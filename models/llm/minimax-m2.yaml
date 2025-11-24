@@ -1,17 +1,17 @@
-model: thudm/glm-4-32b-0414
+model: minimax/minimax-m2
 label:
-  zh_Hans: THUDM/GLM-4-32B-0414
-  en_US: THUDM/GLM-4-32B-0414
+  zh_Hans: MiniMax-M2
+  en_US: MiniMax-M2
 model_type: llm
 features:
-  - agent-thought
   - multi-tool-call
-  - structured-output
-  - tool-call
   - stream-tool-call
+  - structured-output
+  - agent-thought
+  - tool-call
 model_properties:
   mode: chat
-  context_size: 32000
+  context_size: 204800
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -39,7 +39,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.0175'
-  output: '0.0175'
+  input: '0.01365'
+  output: '0.0546'
   unit: '0.0001'
   currency: CNY

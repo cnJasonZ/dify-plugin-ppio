@@ -1,13 +1,13 @@
-model: deepseek/deepseek-r1-distill-llama-8b
+model: baidu/ernie-4.5-21B-a3b-thingking
 label:
-  zh_Hans: 'DeepSeek: DeepSeek R1 Distill Llama 8B'
-  en_US: 'DeepSeek: DeepSeek R1 Distill Llama 8B'
+  zh_Hans: baidu/ernie-4.5-21B-a3b-thingking
+  en_US: baidu/ernie-4.5-21B-a3b-thingking
 model_type: llm
 features:
-  - structured-output
+  - agent-thought
 model_properties:
   mode: chat
-  context_size: 32000
+  context_size: 131072
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -35,7 +35,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.003'
-  output: '0.003'
+  input: '0.00425'
+  output: '0.017'
   unit: '0.0001'
   currency: CNY

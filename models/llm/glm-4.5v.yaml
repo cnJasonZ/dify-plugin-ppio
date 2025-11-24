@@ -4,12 +4,11 @@ label:
   en_US: GLM 4.5V
 model_type: llm
 features:
-  - structured-output
-  - agent-thought
+  - multi-tool-call
   - stream-tool-call
   - vision
+  - agent-thought
   - tool-call
-  - multi-tool-call
 model_properties:
   mode: chat
   context_size: 65536
@@ -40,7 +39,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.045'
-  output: '0.13'
+  input: '0.034'
+  output: '0.102'
   unit: '0.0001'
   currency: CNY
