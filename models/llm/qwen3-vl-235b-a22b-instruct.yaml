@@ -4,12 +4,11 @@ label:
   en_US: Qwen3 VL 235B A22B Instruct
 model_type: llm
 features:
-  - multi-tool-call
-  - stream-tool-call
-  - vision
-  - structured-output
   - agent-thought
+  - multi-tool-call
   - tool-call
+  - stream-tool-call
+  - structured-output
 model_properties:
   mode: chat
   context_size: 131072
@@ -40,7 +39,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.017'
-  output: '0.068'
+  input: '0.02'
+  output: '0.08'
   unit: '0.0001'
   currency: CNY

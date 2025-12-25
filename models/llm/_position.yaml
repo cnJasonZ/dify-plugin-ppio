@@ -1,15 +1,21 @@
-# Moonshotai Models
-- moonshotai/kimi-k2-thinking
-- moonshotai/kimi-k2-0905
-- moonshotai/kimi-k2-instruct
-
 # Minimax Models
+- minimax/minimax-m2.1
 - minimax/minimax-m2
 
-# Paddlepaddle Models
-- paddlepaddle/paddleocr-vl
+# Zai-Org Models
+- zai-org/glm-4.7
+- zai-org/autoglm-phone-9b-multilingual
+- zai-org/glm-4.6v
+- zai-org/glm-4.6
+- zai-org/glm-4.5v
+- zai-org/glm-4.5
+- zai-org/glm-4.5-air
+
+# Xiaomimimo Models
+- xiaomimimo/mimo-v2-flash
 
 # Deepseek Models
+- deepseek/deepseek-v3.2
 - deepseek/deepseek-ocr
 - deepseek/deepseek-v3.2-exp
 - deepseek/deepseek-v3.1-terminus
@@ -25,6 +31,14 @@
 - deepseek/deepseek-r1-distill-qwen-32b
 - deepseek/deepseek-r1-distill-qwen-14b
 - deepseek/deepseek-r1-distill-llama-70b
+
+# Moonshotai Models
+- moonshotai/kimi-k2-thinking
+- moonshotai/kimi-k2-0905
+- moonshotai/kimi-k2-instruct
+
+# Paddlepaddle Models
+- paddlepaddle/paddleocr-vl
 
 # Qwen Models
 - qwen/qwen3-vl-235b-a22b-thinking
@@ -47,12 +61,6 @@
 - qwen/qwen3-vl-30b-a3b-instruct
 - qwen/qwen3-4b-fp8
 
-# Zai-Org Models
-- zai-org/glm-4.6
-- zai-org/glm-4.5v
-- zai-org/glm-4.5
-- zai-org/glm-4.5-air
-
 # Kat-Coder Models
 - kat-coder
 
@@ -65,7 +73,7 @@
 # Baidu Models
 - baidu/ernie-4.5-vl-424b-a47b
 - baidu/ernie-4.5-300b-a47b-paddle
-- baidu/ernie-4.5-21B-a3b-thingking
+- baidu/ernie-4.5-21b-a3b-thinking
 - baidu/ernie-4.5-0.3b
 - baidu/ernie-4.5-21B-a3b
 - baidu/ernie-4.5-vl-28b-a3b

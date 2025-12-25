@@ -1,17 +1,16 @@
-model: qwen/qwen-2.5-72b-instruct
+model: minimax/minimax-m2.1
 label:
-  zh_Hans: Qwen2.5 72B Instruct
-  en_US: Qwen2.5 72B Instruct
+  zh_Hans: Minimax M2.1
+  en_US: Minimax M2.1
 model_type: llm
 features:
-  - agent-thought
   - multi-tool-call
   - structured-output
-  - tool-call
   - stream-tool-call
+  - tool-call
 model_properties:
   mode: chat
-  context_size: 32000
+  context_size: 204800
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -39,7 +38,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.0275'
-  output: '0.0288'
+  input: '0.021'
+  output: '0.084'
   unit: '0.0001'
   currency: CNY
