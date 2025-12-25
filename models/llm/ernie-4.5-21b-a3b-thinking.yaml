@@ -1,17 +1,13 @@
-model: qwen/qwen-2.5-72b-instruct
+model: baidu/ernie-4.5-21b-a3b-thinking
 label:
-  zh_Hans: Qwen2.5 72B Instruct
-  en_US: Qwen2.5 72B Instruct
+  zh_Hans: Ernie 4.5 21B A3B Thinking
+  en_US: Ernie 4.5 21B A3B Thinking
 model_type: llm
 features:
   - agent-thought
-  - multi-tool-call
-  - structured-output
-  - tool-call
-  - stream-tool-call
 model_properties:
   mode: chat
-  context_size: 32000
+  context_size: 131072
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -39,7 +35,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.0275'
-  output: '0.0288'
+  input: '0.005'
+  output: '0.02'
   unit: '0.0001'
   currency: CNY

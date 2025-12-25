@@ -1,13 +1,12 @@
-model: baidu/ernie-4.5-21B-a3b-thingking
+model: zai-org/autoglm-phone-9b-multilingual
 label:
-  zh_Hans: baidu/ernie-4.5-21B-a3b-thingking
-  en_US: baidu/ernie-4.5-21B-a3b-thingking
+  zh_Hans: AutoGLM-Phone-9B-Multilingual
+  en_US: AutoGLM-Phone-9B-Multilingual
 model_type: llm
-features:
-  - agent-thought
+features: []
 model_properties:
   mode: chat
-  context_size: 131072
+  context_size: 65536
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -35,7 +34,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.00425'
-  output: '0.017'
+  input: '0.0025'
+  output: '0.01'
   unit: '0.0001'
   currency: CNY
