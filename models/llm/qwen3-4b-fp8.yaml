@@ -4,7 +4,10 @@ label:
   en_US: Qwen3 4B
 model_type: llm
 features:
+  - stream-tool-call
   - agent-thought
+  - tool-call
+  - multi-tool-call
 model_properties:
   mode: chat
   context_size: 128000

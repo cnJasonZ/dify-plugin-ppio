@@ -1,12 +1,17 @@
-model: paddlepaddle/paddleocr-vl
+model: qwen/qwen3.5-397b-a17b
 label:
-  zh_Hans: PaddleOCR-VL
-  en_US: PaddleOCR-VL
+  zh_Hans: Qwen3.5-397B-A17B
+  en_US: Qwen3.5-397B-A17B
 model_type: llm
-features: []
+features:
+  - tool-call
+  - structured-output
+  - multi-tool-call
+  - stream-tool-call
+  - agent-thought
 model_properties:
   mode: chat
-  context_size: 16384
+  context_size: 262144
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -34,7 +39,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.00143'
-  output: '0.00143'
+  input: '0.03'
+  output: '0.18'
   unit: '0.0001'
   currency: CNY

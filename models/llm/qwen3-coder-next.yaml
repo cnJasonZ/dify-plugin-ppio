@@ -1,13 +1,17 @@
-model: deepseek/deepseek-r1-distill-qwen-32b
+model: qwen/qwen3-coder-next
 label:
-  zh_Hans: 'DeepSeek: DeepSeek R1 Distill Qwen 32B'
-  en_US: 'DeepSeek: DeepSeek R1 Distill Qwen 32B'
+  zh_Hans: Qwen3 Coder Next
+  en_US: Qwen3 Coder Next
 model_type: llm
 features:
+  - tool-call
   - structured-output
+  - multi-tool-call
+  - stream-tool-call
+  - agent-thought
 model_properties:
   mode: chat
-  context_size: 64000
+  context_size: 262144
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -35,7 +39,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.0218'
-  output: '0.0218'
+  input: '0.014'
+  output: '0.105'
   unit: '0.0001'
   currency: CNY

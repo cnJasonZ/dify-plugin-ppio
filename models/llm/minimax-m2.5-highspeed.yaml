@@ -1,13 +1,14 @@
-model: minimax/minimax-m2.1
+model: minimax/minimax-m2.5-highspeed
 label:
-  zh_Hans: MiniMax M2.1
-  en_US: MiniMax M2.1
+  zh_Hans: MiniMax M2.5-highspeed
+  en_US: MiniMax M2.5-highspeed
 model_type: llm
 features:
-  - multi-tool-call
-  - structured-output
-  - stream-tool-call
   - tool-call
+  - structured-output
+  - multi-tool-call
+  - stream-tool-call
+  - agent-thought
 model_properties:
   mode: chat
   context_size: 204800
@@ -38,7 +39,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.021'
-  output: '0.084'
+  input: '0.042'
+  output: '0.168'
   unit: '0.0001'
   currency: CNY

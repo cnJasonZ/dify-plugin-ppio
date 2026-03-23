@@ -1,7 +1,7 @@
 model: kat-coder
 label:
-  zh_Hans: KAT-Coder-Pro V1
-  en_US: KAT-Coder-Pro V1
+  zh_Hans: KAT Coder Pro V1
+  en_US: KAT Coder Pro V1
 model_type: llm
 features:
   - multi-tool-call
@@ -38,7 +38,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.065'
-  output: '0.26'
+  input: '0.021'
+  output: '0.084'
   unit: '0.0001'
   currency: CNY
