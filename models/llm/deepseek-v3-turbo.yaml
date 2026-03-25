@@ -4,10 +4,11 @@ label:
   en_US: DeepSeek V3 (Turbo)
 model_type: llm
 features:
-  - agent-thought
+  - structured-output
+  - stream-tool-call
   - multi-tool-call
   - tool-call
-  - stream-tool-call
+  - agent-thought
 model_properties:
   mode: chat
   context_size: 64000
