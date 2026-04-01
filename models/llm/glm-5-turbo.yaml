@@ -1,17 +1,16 @@
-model: qwen/qwen3-30b-a3b-fp8
+model: zai-org/glm-5-turbo
 label:
-  zh_Hans: Qwen3-30B-A3B
-  en_US: Qwen3-30B-A3B
+  zh_Hans: GLM-5-Turbo
+  en_US: GLM-5-Turbo
 model_type: llm
 features:
-  - structured-output
-  - stream-tool-call
-  - multi-tool-call
   - tool-call
-  - agent-thought
+  - structured-output
+  - multi-tool-call
+  - stream-tool-call
 model_properties:
   mode: chat
-  context_size: 40960
+  context_size: 202800
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -39,7 +38,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.0072'
-  output: '0.0326'
+  input: '0.07'
+  output: '0.26'
   unit: '0.0001'
   currency: CNY
