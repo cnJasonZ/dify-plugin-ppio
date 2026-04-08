@@ -1,4 +1,5 @@
 # Zai-Org Models
+- zai-org/glm-5.1
 - zai-org/glm-5-turbo
 - zai-org/glm-5
 - zai-org/glm-4.7-flash
@@ -10,16 +11,17 @@
 - zai-org/glm-4.5
 - zai-org/glm-4.5-air
 
-# Xiaomimimo Models
-- xiaomimimo/mimo-v2-pro
-- xiaomimimo/mimo-v2-flash
-
 # Minimax Models
+- minimax/minimax-m2.7-highspeed
 - minimax/minimax-m2.7
 - minimax/minimax-m2.5-highspeed
 - minimax/minimax-m2.5
 - minimax/minimax-m2.1
 - minimax/minimax-m2
+
+# Xiaomimimo Models
+- xiaomimimo/mimo-v2-pro
+- xiaomimimo/mimo-v2-flash
 
 # Qwen Models
 - qwen/qwen3.5-27b
