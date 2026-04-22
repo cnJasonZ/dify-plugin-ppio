@@ -1,3 +1,10 @@
+# Moonshotai Models
+- moonshotai/kimi-k2.6
+- moonshotai/kimi-k2.5
+- moonshotai/kimi-k2-thinking
+- moonshotai/kimi-k2-0905
+- moonshotai/kimi-k2-instruct
+
 # Zai-Org Models
 - zai-org/glm-5.1
 - zai-org/glm-5-turbo
@@ -65,12 +72,6 @@
 - deepseek/deepseek-v3/community
 - deepseek/deepseek-r1/community
 - deepseek/deepseek-r1-distill-llama-70b
-
-# Moonshotai Models
-- moonshotai/kimi-k2.5
-- moonshotai/kimi-k2-thinking
-- moonshotai/kimi-k2-0905
-- moonshotai/kimi-k2-instruct
 
 # Kat-Coder Models
 - kat-coder
