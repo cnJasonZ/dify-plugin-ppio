@@ -183,3 +183,8 @@ Thumbs.db
 *.difypkg
 
 sync_models.py
+
+# Claude Code / Agent tools
+.claude/
+.agents/
+skills-lock.json
