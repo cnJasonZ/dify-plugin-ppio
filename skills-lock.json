@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "llm-integration": {
+      "source": "git@gitlab.paigod.work:ai-cloud-public/skills.git",
+      "sourceType": "git",
+      "computedHash": "9f698a5b8416b7a9242e26d163b53767ed742edabebd6b020bc5578e82d9e341"
+    }
+  }
+}

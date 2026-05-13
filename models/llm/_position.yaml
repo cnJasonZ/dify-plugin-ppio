@@ -15,6 +15,11 @@
 - deepseek/deepseek-r1/community
 - deepseek/deepseek-r1-distill-llama-70b
 
+# Xiaomimimo Models
+- xiaomimimo/mimo-v2.5-pro
+- xiaomimimo/mimo-v2-pro
+- xiaomimimo/mimo-v2-flash
+
 # Qwen Models
 - qwen/qwen3.6-27b
 - qwen/qwen3.5-27b
@@ -71,10 +76,6 @@
 - minimax/minimax-m2.5
 - minimax/minimax-m2.1
 - minimax/minimax-m2
-
-# Xiaomimimo Models
-- xiaomimimo/mimo-v2-pro
-- xiaomimimo/mimo-v2-flash
 
 # Kat-Coder Models
 - kat-coder
