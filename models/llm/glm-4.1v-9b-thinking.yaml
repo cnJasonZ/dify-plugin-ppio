@@ -1,16 +1,13 @@
-model: xiaomimimo/mimo-v2.5-pro
+model: thudm/glm-4.1v-9b-thinking
 label:
-  zh_Hans: XiaomiMiMo/MiMo-V2.5-Pro
-  en_US: XiaomiMiMo/MiMo-V2.5-Pro
+  zh_Hans: GLM 4.1V 9B Thinking
+  en_US: GLM 4.1V 9B Thinking
 model_type: llm
 features:
-  - structured-output
-  - stream-tool-call
-  - multi-tool-call
-  - tool-call
+  - agent-thought
 model_properties:
   mode: chat
-  context_size: 1048576
+  context_size: 65536
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -38,7 +35,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.03'
-  output: '0.06'
+  input: '0.0025'
+  output: '0.01'
   unit: '0.0001'
   currency: CNY
