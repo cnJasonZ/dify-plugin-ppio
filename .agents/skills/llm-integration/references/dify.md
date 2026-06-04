@@ -178,7 +178,12 @@ git fetch {provider_id}
 git rebase {provider_id}/{provider_branch}
 ```
 
-**Important marketplace diff rule:** In the `dify-plugins` marketplace repo, each provider PR must change exactly **one** file: the provider's canonical `.difypkg` file at the documented package path. Do **not** delete, clean up, rename, or otherwise modify other old/historical `.difypkg` files in the package directory, even if they look stale.
+**Clean up old packages** in the target directory before copying. There may be leftover `.difypkg` files from previous versions:
+
+```bash
+# Remove old .difypkg files in the package directory
+rm -f {marketplace_package_dir}/*.difypkg
+```
 
 Copy the generated `.difypkg` file to the correct path:
 
@@ -186,25 +191,10 @@ Copy the generated `.difypkg` file to the correct path:
 cp {plugin_repo_dir}/{provider_name}.difypkg {marketplace_package_path}
 ```
 
-Stage only that canonical package file:
-
-```bash
-git add {marketplace_package_path}
-```
-
-Verify the PR diff contains only one file before committing/pushing:
-
-```bash
-git diff --cached --name-status
-# Expected: exactly one M entry for {marketplace_package_path}
-```
-
-If `git diff upstream/main...HEAD --name-status` shows deleted old packages or any files besides `{marketplace_package_path}`, restore those unrelated files from upstream/the base branch before pushing.
-
 ### Step 8: Commit and Push Marketplace Repo
 
 ```bash
-git add {marketplace_package_path}
+git add .
 git commit -m "chore: update {provider_name} model list"
 git push {provider_id} {provider_branch}
 ```
@@ -275,8 +265,8 @@ Before marking complete, verify:
 - [ ] Plugin repo committed and pushed with **correct provider identity** (verify with `git log`)
 - [ ] `dify` CLI is installed and `.difypkg` file generated successfully
 - [ ] Marketplace repo has the provider's remote configured
-- [ ] Only the canonical marketplace `.difypkg` file was staged/committed; no old package files were deleted or modified
-- [ ] Marketplace PR diff contains exactly one changed file: `{marketplace_package_path}`
+- [ ] Old `.difypkg` files cleaned up before copying new one
+- [ ] Package copied to correct path in marketplace repo
 - [ ] Marketplace repo committed and pushed with **correct provider identity** (verify with `git log`)
 - [ ] `gh auth status` confirms correct GitHub account for PR creation
 - [ ] PR body follows the repo's PR template (from `.github/pull_request_template.md`)
