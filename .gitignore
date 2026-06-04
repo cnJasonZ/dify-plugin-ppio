@@ -171,3 +171,5 @@ cython_debug/
 
 *.difypkg
 .agents/skills/
+
+.claude/skills/
