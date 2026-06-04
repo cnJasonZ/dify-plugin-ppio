@@ -149,7 +149,7 @@ Read `references/dify.md` for the complete workflow, branch names, and package p
 4. **Bump version:** Increment both `version` fields in `manifest.yaml` by one patch version.
 5. **Commit and push** the plugin repo. Verify commit author.
 6. **Build package:** Check `dify` CLI is installed. From the parent directory, run `dify plugin package`.
-7. **Marketplace repo:** Clone or enter the `dify-plugins` repo. Set up provider's remote. Switch to the provider's branch. **Clean up old `.difypkg` files** before copying new one.
+7. **Marketplace repo:** Clone or enter the `dify-plugins` repo. Set up provider's remote. Switch to the provider's branch. **Only replace the provider's canonical `.difypkg` file** at the documented package path; do not remove or modify other historical `.difypkg` files.
 8. **Replace package:** Copy the `.difypkg` file to the provider's package path in the marketplace repo.
 9. **Commit and push.** Switch `gh auth` to the provider's account. Read the repo's PR template. Create PR with title `Update {Provider Name} model list`, body from PR template with metadata from `manifest.yaml`.
 10. **Present the PR URL** to the user.
