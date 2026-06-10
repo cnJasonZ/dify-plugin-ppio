@@ -113,6 +113,11 @@ def determine_model_features(api_model: Dict[str, Any]) -> list[str]:
     return list(set(features))
 
 
+def should_ignore_model(model_id: str) -> bool:
+    """Return True for models that should not be exposed in Dify."""
+    return model_id.startswith("ai_infer_test")
+
+
 def create_yaml_template(model_id: str, api_model: Dict[str, Any]) -> Dict[str, Any]:
     """Create a new YAML template for a model."""
     return {
@@ -168,6 +173,7 @@ def sync_yaml_files(yaml_dir: str):
     """Sync YAML files with API data - update existing files and create new ones."""
     # Get API data
     api_data = get_api_data()
+    api_data["data"] = [model for model in api_data["data"] if not should_ignore_model(model["id"])]
     api_models = {model["id"]: model for model in api_data["data"]}
 
     # Create _position.yaml file
