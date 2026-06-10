@@ -13,6 +13,7 @@
 - deepseek/deepseek-v4-pro
 - deepseek/deepseek-ocr-2
 - deepseek/deepseek-v3.2
+- deepseek/deepseek-ocr
 - deepseek/deepseek-v3.2-exp
 - deepseek/deepseek-v3.1-terminus
 - deepseek/deepseek-v3-0324
@@ -114,9 +115,6 @@
 
 # Elephant Models
 - elephant
-
-# Ai_Infer_Test_1 Models
-- ai_infer_test_1
 
 # Ai_Infer_Test_2 Models
 - ai_infer_test_2

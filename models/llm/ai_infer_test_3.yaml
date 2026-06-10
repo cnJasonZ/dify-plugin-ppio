@@ -1,16 +1,16 @@
-model: qwen/qwen3-omni-30b-a3b-instruct
+model: ai_infer_test_3
 label:
-  zh_Hans: qwen/qwen3-omni-30b-a3b-instruct
-  en_US: qwen/qwen3-omni-30b-a3b-instruct
+  zh_Hans: ai_infer_test_3
+  en_US: ai_infer_test_3
 model_type: llm
 features:
+  - structured-output
+  - multi-tool-call
   - stream-tool-call
   - tool-call
-  - multi-tool-call
-  - structured-output
 model_properties:
   mode: chat
-  context_size: 65536
+  context_size: 200000
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -38,7 +38,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.018'
-  output: '0.069'
+  input: '0'
+  output: '0'
   unit: '0.0001'
   currency: CNY
