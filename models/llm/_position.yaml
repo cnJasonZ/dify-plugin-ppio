@@ -1,3 +1,27 @@
+# Zai-Org Models
+- zai-org/glm-5.2
+- zai-org/glm-5.1
+- zai-org/glm-5v-turbo
+- zai-org/glm-5-turbo
+- zai-org/glm-5
+- zai-org/glm-4.7-flash
+- zai-org/glm-4.7
+- zai-org/autoglm-phone-9b-multilingual
+- zai-org/glm-4.6v
+- zai-org/glm-4.6
+- zai-org/glm-ocr
+- zai-org/glm-4.5v
+- zai-org/glm-4.5
+- zai-org/glm-4.5-air
+
+# Moonshotai Models
+- moonshotai/kimi-k2.7-code
+- moonshotai/kimi-k2.6
+- moonshotai/kimi-k2.5
+- moonshotai/kimi-k2-thinking
+- moonshotai/kimi-k2-0905
+- moonshotai/kimi-k2-instruct
+
 # Minimax Models
 - minimax/minimax-m3
 - minimax/minimax-m2.7-highspeed
@@ -70,28 +94,6 @@
 - qwen/qwen3-4b-fp8
 - qwen/qwen-2-7b-instruct
 - qwen/qwen-2-vl-72b-instruct
-
-# Moonshotai Models
-- moonshotai/kimi-k2.6
-- moonshotai/kimi-k2.5
-- moonshotai/kimi-k2-thinking
-- moonshotai/kimi-k2-0905
-- moonshotai/kimi-k2-instruct
-
-# Zai-Org Models
-- zai-org/glm-5.1
-- zai-org/glm-5v-turbo
-- zai-org/glm-5-turbo
-- zai-org/glm-5
-- zai-org/glm-4.7-flash
-- zai-org/glm-4.7
-- zai-org/autoglm-phone-9b-multilingual
-- zai-org/glm-4.6v
-- zai-org/glm-4.6
-- zai-org/glm-ocr
-- zai-org/glm-4.5v
-- zai-org/glm-4.5
-- zai-org/glm-4.5-air
 
 # Kat-Coder Models
 - kat-coder
