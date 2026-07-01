@@ -78,6 +78,7 @@
 - qwen/qwen3-235b-a22b-fp8
 - qwen/qwen3-32b-fp8
 - qwen/qwen3-30b-a3b-fp8
+- qwen/qwen3.5-omni-flash
 - qwen/qwen3-coder-30b-a3b-instruct
 - qwen/qwen3-next-80b-a3b-instruct
 - qwen/qwen3-next-80b-a3b-thinking
