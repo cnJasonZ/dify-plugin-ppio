@@ -115,6 +115,21 @@
 - baidu/ernie-4.5-21B-a3b
 - baidu/ernie-4.5-vl-28b-a3b
 
+# Gemini-3.1-Flash-Lite-Image Models
+- gemini-3.1-flash-lite-image
+
+# Gemini-3.1-Flash-Image Models
+- gemini-3.1-flash-image
+
+# Gemini-3-Pro-Image Models
+- gemini-3-pro-image
+
+# Gemini-2.5-Flash-Image Models
+- gemini-2.5-flash-image
+
+# Gpt-Image-2 Models
+- gpt-image-2
+
 # Elephant Models
 - elephant
 
