@@ -1,3 +1,12 @@
+# Moonshotai Models
+- moonshotai/kimi-k3
+- moonshotai/kimi-k2.7-code
+- moonshotai/kimi-k2.6
+- moonshotai/kimi-k2.5
+- moonshotai/kimi-k2-thinking
+- moonshotai/kimi-k2-0905
+- moonshotai/kimi-k2-instruct
+
 # Zai-Org Models
 - zai-org/glm-5.2
 - zai-org/glm-5.1
@@ -12,14 +21,6 @@
 - zai-org/glm-4.5v
 - zai-org/glm-4.5
 - zai-org/glm-4.5-air
-
-# Moonshotai Models
-- moonshotai/kimi-k2.7-code
-- moonshotai/kimi-k2.6
-- moonshotai/kimi-k2.5
-- moonshotai/kimi-k2-thinking
-- moonshotai/kimi-k2-0905
-- moonshotai/kimi-k2-instruct
 
 # Minimax Models
 - minimax/minimax-m3
@@ -114,6 +115,9 @@
 - baidu/ernie-4.5-0.3b
 - baidu/ernie-4.5-21B-a3b
 - baidu/ernie-4.5-vl-28b-a3b
+
+# Gpt-Image-2-Oai Models
+- gpt-image-2-oai
 
 # Elephant Models
 - elephant
