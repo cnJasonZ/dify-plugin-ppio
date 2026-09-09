@@ -1,7 +1,7 @@
 model: zai-org/glm-4.5-air
 label:
-  zh_Hans: zai-org/glm-4.5-air
-  en_US: zai-org/glm-4.5-air
+  zh_Hans: GLM 4.5 Air
+  en_US: GLM 4.5 Air
 model_type: llm
 features:
   - multi-tool-call

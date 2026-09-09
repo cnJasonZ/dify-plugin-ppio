@@ -1,7 +1,7 @@
 model: moonshotai/kimi-k2-0905
 label:
-  zh_Hans: Kimi K2 0905
-  en_US: Kimi K2 0905
+  zh_Hans: Kimi K2 Instruct 0905
+  en_US: Kimi K2 Instruct 0905
 model_type: llm
 features:
   - multi-tool-call

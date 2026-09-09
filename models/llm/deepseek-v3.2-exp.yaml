@@ -1,7 +1,7 @@
 model: deepseek/deepseek-v3.2-exp
 label:
-  zh_Hans: Deepseek V3.2 Exp
-  en_US: Deepseek V3.2 Exp
+  zh_Hans: DeepSeek V3.2 Exp
+  en_US: DeepSeek V3.2 Exp
 model_type: llm
 features:
   - multi-tool-call

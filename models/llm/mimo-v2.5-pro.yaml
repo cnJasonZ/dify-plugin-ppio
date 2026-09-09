@@ -1,7 +1,7 @@
 model: xiaomimimo/mimo-v2.5-pro
 label:
-  zh_Hans: XiaomiMiMo/MiMo-V2.5-Pro
-  en_US: XiaomiMiMo/MiMo-V2.5-Pro
+  zh_Hans: Xiaomi MiMo V2.5 Pro
+  en_US: Xiaomi MiMo V2.5 Pro
 model_type: llm
 features:
   - structured-output

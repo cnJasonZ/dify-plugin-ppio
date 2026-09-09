@@ -1,7 +1,7 @@
 model: deepseek/deepseek-v4-pro
 label:
-  zh_Hans: Deepseek V4 Pro
-  en_US: Deepseek V4 Pro
+  zh_Hans: DeepSeek V4 Pro
+  en_US: DeepSeek V4 Pro
 model_type: llm
 features:
   - tool-call
@@ -39,7 +39,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.03'
-  output: '0.06'
+  input: '0.09'
+  output: '0.27'
   unit: '0.0001'
   currency: CNY

@@ -1,7 +1,7 @@
 model: deepseek/deepseek-v3.1-terminus
 label:
-  zh_Hans: Deepseek V3.1 Terminus
-  en_US: Deepseek V3.1 Terminus
+  zh_Hans: DeepSeek V3.1 Terminus
+  en_US: DeepSeek V3.1 Terminus
 model_type: llm
 features:
   - structured-output

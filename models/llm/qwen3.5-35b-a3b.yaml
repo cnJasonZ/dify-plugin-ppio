@@ -1,7 +1,7 @@
 model: qwen/qwen3.5-35b-a3b
 label:
-  zh_Hans: Qwen3.5-35B-A3B
-  en_US: Qwen3.5-35B-A3B
+  zh_Hans: Qwen3.5 35B A3B
+  en_US: Qwen3.5 35B A3B
 model_type: llm
 features:
   - tool-call

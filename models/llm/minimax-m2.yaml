@@ -1,7 +1,7 @@
 model: minimax/minimax-m2
 label:
-  zh_Hans: MiniMax-M2
-  en_US: MiniMax-M2
+  zh_Hans: MiniMax M2
+  en_US: MiniMax M2
 model_type: llm
 features:
   - multi-tool-call

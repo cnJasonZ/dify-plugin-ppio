@@ -1,7 +1,7 @@
 model: elephant
 label:
-  zh_Hans: Ling-2.6-flash
-  en_US: Ling-2.6-flash
+  zh_Hans: Ling 2.6 Flash
+  en_US: Ling 2.6 Flash
 model_type: llm
 features:
   - stream-tool-call

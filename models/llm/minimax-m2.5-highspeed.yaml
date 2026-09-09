@@ -1,7 +1,7 @@
 model: minimax/minimax-m2.5-highspeed
 label:
-  zh_Hans: MiniMax M2.5-highspeed
-  en_US: MiniMax M2.5-highspeed
+  zh_Hans: MiniMax M2.5 Highspeed
+  en_US: MiniMax M2.5 Highspeed
 model_type: llm
 features:
   - tool-call

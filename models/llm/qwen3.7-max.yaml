@@ -1,7 +1,7 @@
 model: qwen/qwen3.7-max
 label:
-  zh_Hans: Qwen3.7-Max
-  en_US: Qwen3.7-Max
+  zh_Hans: Qwen3.7 Max
+  en_US: Qwen3.7 Max
 model_type: llm
 features:
   - stream-tool-call

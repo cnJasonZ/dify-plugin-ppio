@@ -1,7 +1,7 @@
 model: zai-org/autoglm-phone-9b-multilingual
 label:
-  zh_Hans: AutoGLM-Phone-9B-Multilingual
-  en_US: AutoGLM-Phone-9B-Multilingual
+  zh_Hans: AutoGLM Phone 9B Multilingual
+  en_US: AutoGLM Phone 9B Multilingual
 model_type: llm
 features: []
 model_properties:

@@ -1,7 +1,7 @@
 model: deepseek/deepseek-r1-turbo
 label:
-  zh_Hans: DeepSeek R1 (Turbo)
-  en_US: DeepSeek R1 (Turbo)
+  zh_Hans: DeepSeek R1 Turbo
+  en_US: DeepSeek R1 Turbo
 model_type: llm
 features:
   - agent-thought

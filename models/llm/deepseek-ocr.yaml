@@ -1,7 +1,7 @@
 model: deepseek/deepseek-ocr
 label:
-  zh_Hans: DeepSeek-OCR
-  en_US: DeepSeek-OCR
+  zh_Hans: DeepSeek OCR
+  en_US: DeepSeek OCR
 model_type: llm
 features: []
 model_properties:

@@ -1,7 +1,7 @@
 model: deepseek/deepseek-v3-turbo
 label:
-  zh_Hans: DeepSeek V3 (Turbo)
-  en_US: DeepSeek V3 (Turbo)
+  zh_Hans: DeepSeek V3 Turbo
+  en_US: DeepSeek V3 Turbo
 model_type: llm
 features:
   - structured-output

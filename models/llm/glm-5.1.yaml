@@ -1,7 +1,7 @@
 model: zai-org/glm-5.1
 label:
-  zh_Hans: GLM-5.1
-  en_US: GLM-5.1
+  zh_Hans: GLM 5.1
+  en_US: GLM 5.1
 model_type: llm
 features:
   - tool-call

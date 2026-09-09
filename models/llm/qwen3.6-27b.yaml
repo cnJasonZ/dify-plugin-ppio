@@ -1,7 +1,7 @@
 model: qwen/qwen3.6-27b
 label:
-  zh_Hans: Qwen3.6-27B
-  en_US: Qwen3.6-27B
+  zh_Hans: Qwen3.6 27B
+  en_US: Qwen3.6 27B
 model_type: llm
 features:
   - tool-call

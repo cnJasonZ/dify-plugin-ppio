@@ -1,7 +1,7 @@
 model: zai-org/glm-4.7-flash
 label:
-  zh_Hans: GLM-4.7-Flash
-  en_US: GLM-4.7-Flash
+  zh_Hans: GLM 4.7 Flash
+  en_US: GLM 4.7 Flash
 model_type: llm
 features:
   - stream-tool-call

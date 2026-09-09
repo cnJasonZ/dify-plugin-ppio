@@ -1,14 +1,14 @@
-model: moonshotai/kimi-k3-dogfooding
+model: zai-org/glm-5.3
 label:
-  zh_Hans: kimi-k3-dogfooding
-  en_US: kimi-k3-dogfooding
+  zh_Hans: GLM 5.3
+  en_US: GLM 5.3
 model_type: llm
 features:
   - tool-call
+  - agent-thought
+  - structured-output
   - stream-tool-call
   - multi-tool-call
-  - structured-output
-  - agent-thought
 model_properties:
   mode: chat
   context_size: 1048576
@@ -39,7 +39,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.2'
-  output: '1'
+  input: '0.08'
+  output: '0.28'
   unit: '0.0001'
   currency: CNY

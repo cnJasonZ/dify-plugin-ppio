@@ -1,7 +1,7 @@
 model: qwen/qwen3.5-397b-a17b
 label:
-  zh_Hans: Qwen3.5-397B-A17B
-  en_US: Qwen3.5-397B-A17B
+  zh_Hans: Qwen3.5 397B A17B
+  en_US: Qwen3.5 397B A17B
 model_type: llm
 features:
   - tool-call
