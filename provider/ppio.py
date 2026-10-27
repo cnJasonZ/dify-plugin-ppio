@@ -18,9 +18,9 @@ class PPIOProvider(ModelProvider):
         try:
             model_instance = self.get_model_instance(ModelType.LLM)
 
-            # Use `deepseek/deepseek-v3-0324` model for validate,
+            # Use `deepseek/deepseek-v4.1-flash` model for validate,
             # no matter what model you pass in, text completion model or chat model
-            model_instance.validate_credentials(model="deepseek/deepseek-v3-0324", credentials=credentials)
+            model_instance.validate_credentials(model="deepseek/deepseek-v4.1-flash", credentials=credentials)
         except CredentialsValidateFailedError as ex:
             raise ex
         except Exception as ex:

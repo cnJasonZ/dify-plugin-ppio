@@ -1,13 +1,16 @@
-model: deepseek/deepseek-r1-distill-llama-70b
+model: minimax/minimax-m3.1-flash
 label:
-  zh_Hans: DeepSeek R1 Distill Llama 70B
-  en_US: DeepSeek R1 Distill Llama 70B
+  zh_Hans: MiniMax M3.1 Flash
+  en_US: MiniMax M3.1 Flash
 model_type: llm
 features:
+  - tool-call
+  - multi-tool-call
+  - stream-tool-call
   - structured-output
 model_properties:
   mode: chat
-  context_size: 32000
+  context_size: 1000000
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -35,7 +38,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.058'
-  output: '0.058'
+  input: '0.01'
+  output: '0.04'
   unit: '0.0001'
   currency: CNY

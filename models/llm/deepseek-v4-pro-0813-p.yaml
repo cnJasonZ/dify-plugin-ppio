@@ -1,16 +1,16 @@
-model: qwen/qwen3-max
+model: deepseek/deepseek-v4-pro-0813-p
 label:
-  zh_Hans: Qwen3 Max
-  en_US: Qwen3 Max
+  zh_Hans: deepseek v4 pro 0813 p
+  en_US: deepseek v4 pro 0813 p
 model_type: llm
 features:
-  - stream-tool-call
   - tool-call
-  - structured-output
   - multi-tool-call
+  - stream-tool-call
+  - structured-output
 model_properties:
   mode: chat
-  context_size: 262144
+  context_size: 1048576
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -38,7 +38,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.15'
-  output: '0.6'
+  input: '0.09'
+  output: '0.27'
   unit: '0.0001'
   currency: CNY
