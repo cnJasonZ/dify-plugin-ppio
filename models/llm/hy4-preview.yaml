@@ -1,16 +1,16 @@
-model: xiaomimimo/mimo-v2.5
+model: tencent/hy4-preview
 label:
-  zh_Hans: Xiaomi MiMo V2.5
-  en_US: Xiaomi MiMo V2.5
+  zh_Hans: Hy4 Preview
+  en_US: Hy4 Preview
 model_type: llm
 features:
-  - stream-tool-call
   - tool-call
-  - structured-output
   - multi-tool-call
+  - stream-tool-call
+  - structured-output
 model_properties:
   mode: chat
-  context_size: 1048576
+  context_size: 1000000
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -38,7 +38,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.01'
-  output: '0.02'
+  input: '0.06'
+  output: '0.18'
   unit: '0.0001'
   currency: CNY

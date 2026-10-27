@@ -1,16 +1,16 @@
-model: qwen/qwen3-vl-30b-a3b-instruct
+model: qwen/qwen3.7-plus
 label:
-  zh_Hans: Qwen3 VL 30B A3B Instruct
-  en_US: Qwen3 VL 30B A3B Instruct
+  zh_Hans: Qwen3.7 Plus
+  en_US: Qwen3.7 Plus
 model_type: llm
 features:
-  - structured-output
   - tool-call
-  - stream-tool-call
   - multi-tool-call
+  - stream-tool-call
+  - structured-output
 model_properties:
   mode: chat
-  context_size: 131072
+  context_size: 991000
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -38,7 +38,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.0075'
-  output: '0.03'
+  input: '0.02'
+  output: '0.08'
   unit: '0.0001'
   currency: CNY

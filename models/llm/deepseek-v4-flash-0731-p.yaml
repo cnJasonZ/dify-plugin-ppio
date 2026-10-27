@@ -1,16 +1,17 @@
-model: qwen/qwen3-coder-30b-a3b-instruct
+model: deepseek/deepseek-v4-flash-0731-p
 label:
-  zh_Hans: Qwen3 Coder 30B A3B Instruct
-  en_US: Qwen3 Coder 30B A3B Instruct
+  zh_Hans: deepseek/deepseek-v4-flash-0731-p
+  en_US: deepseek/deepseek-v4-flash-0731-p
 model_type: llm
 features:
-  - structured-output
   - tool-call
+  - structured-output
+  - agent-thought
   - stream-tool-call
   - multi-tool-call
 model_properties:
   mode: chat
-  context_size: 262144
+  context_size: 1048576
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -38,7 +39,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.0225'
+  input: '0.03'
   output: '0.09'
   unit: '0.0001'
   currency: CNY

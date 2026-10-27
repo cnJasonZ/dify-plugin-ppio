@@ -1,16 +1,16 @@
-model: qwen/qwen3-vl-235b-a22b-thinking
+model: moonshotai/kimi-k3.1-pro
 label:
-  zh_Hans: Qwen3 VL 235B A22B Thinking
-  en_US: Qwen3 VL 235B A22B Thinking
+  zh_Hans: Kimi K3.1 Pro
+  en_US: Kimi K3.1 Pro
 model_type: llm
 features:
-  - stream-tool-call
-  - agent-thought
   - tool-call
   - multi-tool-call
+  - stream-tool-call
+  - structured-output
 model_properties:
   mode: chat
-  context_size: 131072
+  context_size: 1048576
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -38,7 +38,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.02'
-  output: '0.2'
+  input: '0.13'
+  output: '0.68'
   unit: '0.0001'
   currency: CNY
