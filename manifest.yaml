@@ -1,4 +1,5 @@
 author: cnjasonz
+contact: gbdzxalbb@qq.com
 created_at: "2024-02-13T14:45:00-04:00"
 description:
   en_US: PPIO is a cloud infrastructure provider offering a wide range of AI model services and cost-effective GPU computing services.
@@ -15,11 +16,13 @@ meta:
     entrypoint: main
     language: python
     version: '3.10'
-  version: 0.0.27
+  minimum_dify_version: 1.0.0
+  version: 0.0.28
 name: ppio
 plugins:
   models:
   - provider/ppio.yaml
+repo: https://github.com/cnJasonZ/dify-plugin-ppio
 resource:
   memory: 268435456
   permission:
@@ -34,5 +37,5 @@ resource:
     tool:
       enabled: true
 type: plugin
-version: 0.0.27
+version: 0.0.28
 privacy: https://ppio.com/legal/privacy-policy
