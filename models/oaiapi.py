@@ -1,5 +1,6 @@
 import json
 import logging
+import uuid
 from collections.abc import Generator
 from decimal import Decimal
 from typing import Optional, Union, cast
@@ -437,8 +438,11 @@ class OAIAPICompatLargeLanguageModel(_CommonOaiApiCompat, LargeLanguageModel):
                 return tool_call
 
             for new_tool_call in new_tool_calls:
-                # get tool call
-                tool_call = get_tool_call(new_tool_call.function.name)
+                # generate ID for tool calls with function name but no ID to track them
+                if new_tool_call.function.name and not new_tool_call.id:
+                    new_tool_call.id = f"chatcmpl-tool-{uuid.uuid4().hex}"
+                # get tool call by ID (matches upstream dify_plugin SDK)
+                tool_call = get_tool_call(new_tool_call.id)
                 # update tool call
                 if new_tool_call.id:
                     tool_call.id = new_tool_call.id

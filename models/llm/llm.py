@@ -37,6 +37,9 @@ class PPIOLargeLanguageModel(OAIAPICompatLargeLanguageModel):
     @classmethod
     def _add_custom_parameters(cls, credentials: dict, model: str) -> None:
         credentials["mode"] = "chat"
+        # Without this the OAI-compatible base drops `tools` from the request
+        # and ignores `tool_calls` in the response (it defaults to "no_call").
+        credentials["function_calling_type"] = "tool_call"
 
     def _generate(
         self,
