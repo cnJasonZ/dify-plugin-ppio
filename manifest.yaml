@@ -36,6 +36,8 @@ resource:
       tts: false
     tool:
       enabled: true
+tags:
+- other
 type: plugin
 version: 0.0.29
 privacy: https://ppio.com/legal/privacy-policy
