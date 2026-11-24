@@ -1,7 +1,7 @@
 model: inclusionai/ling-3.1-flash
 label:
-  zh_Hans: Ling 3.1 Flash
-  en_US: Ling 3.1 Flash
+  zh_Hans: Ling 3.1 Flash 1019
+  en_US: Ling 3.1 Flash 1019
 model_type: llm
 features:
   - tool-call
