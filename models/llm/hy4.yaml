@@ -1,16 +1,16 @@
-model: baidu/ernie-5.0-thinking-preview
+model: tencent/hy4
 label:
-  zh_Hans: Ernie 5.0 Thinking Preview
-  en_US: Ernie 5.0 Thinking Preview
+  zh_Hans: Hy4
+  en_US: Hy4
 model_type: llm
 features:
-  - stream-tool-call
   - tool-call
-  - agent-thought
+  - stream-tool-call
   - multi-tool-call
+  - structured-output
 model_properties:
   mode: chat
-  context_size: 183000
+  context_size: 1000000
 parameter_rules:
   - name: temperature
     use_template: temperature
@@ -38,7 +38,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0'
-  output: '0'
+  input: '0.03'
+  output: '0.09'
   unit: '0.0001'
   currency: CNY

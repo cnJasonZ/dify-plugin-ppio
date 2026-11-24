@@ -1,12 +1,12 @@
-model: deepseek/deepseek-v4-pro-0813-p
+model: zai-org/glm-5.3-flashX
 label:
-  zh_Hans: deepseek v4 pro 0813 p
-  en_US: deepseek v4 pro 0813 p
+  zh_Hans: GLM 5.3 FlashX
+  en_US: GLM 5.3 FlashX
 model_type: llm
 features:
   - tool-call
-  - multi-tool-call
   - stream-tool-call
+  - multi-tool-call
   - structured-output
 model_properties:
   mode: chat
@@ -38,7 +38,7 @@ parameter_rules:
     max: 2
     default: 0
 pricing:
-  input: '0.09'
-  output: '0.27'
+  input: '0.02'
+  output: '0.07'
   unit: '0.0001'
   currency: CNY
